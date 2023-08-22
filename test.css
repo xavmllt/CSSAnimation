@@ -1,0 +1,117 @@
+
+/* Question 1: */
+#texte1{
+  font-size: 30px;
+  animation-name: texte;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes texte {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+
+/* Question 2: */
+#texte2{
+  font-size: 20px;
+  animation-name: txt;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes txt {
+  from {
+    opacity: 2;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+/* Question 3: */
+.anim{
+  animation-name: anim1,anim2,anim3;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes anim1 {
+  from {
+    margin-left: 10vh;
+
+  to {
+    margin-left: 100vh;
+  }
+  }
+}
+
+@keyframes anim2 {
+  from {
+    opacity: 2;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes anim3 {
+  from {
+    margin-right: 10vh;
+  }
+
+  to {
+    margin-left: 100vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+img{
+  height: 200px;
+  width: 200px;
+}
+
+img:hover{
+  transform: rotate(25deg);
+  border-radius: 25px;
+  animation-name: vic;
+  animation-duration: 10s;
+  animation-direction: reverse;
+}
+
+@keyframes vic {
+  from {
+      margin-left: 80vh;
+  }
+
+  to {
+      margin-right: 80vh;
+  }
+}
+
+
+
+  
+

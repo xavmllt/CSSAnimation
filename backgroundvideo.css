@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.monConteneur{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenu{
+    text-align: center;
+}
+
+.contenu h1{
+    font-size: 95px;
+    /* color: #fff; */
+    margin-bottom: 50px;
+}
+
+.contenu a{
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+    Animation-name : lien;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.content a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+
+a:hover{
+    color: red;
+    background-color: black;
+    transform: scale(2);
+}
+
+h1{
+    Animation-name : fade;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    color: purple;
+    /* animation-direction: reverse; */
+}
+
+@keyframes fade {
+    from {
+    opacity: 2;
+
+  }
+
+  to {
+    opacity: 0;
+}
+}
+
+#carre{
+    border: solid 10px red;
+    width: 20vh;
+    height: 10vh;
+    background-color: green;
+    transform: rotate(20°);
+
+}
+
+@keyframes rectangle {
+    from {
+    margin-bottom: 100vh;
+
+  }
+
+  to {
+    margin-top: 100vh;
+} 
+} 
+
+@keyframes lien {
+    from {
+        margin-left: 80vh;
+    }
+
+    to {
+        margin-left: -80vh;
+    }
+}
+    
+
